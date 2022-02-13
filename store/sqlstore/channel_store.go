@@ -3267,7 +3267,7 @@ func (s SqlChannelStore) SearchAllChannels(term string, opts store.ChannelSearch
 	return channels, totalCount, nil
 }
 
-// TODO: rewrite in squrrel
+// TODO: rewrite in SQuirreL
 func (s SqlChannelStore) SearchMore(userId string, teamId string, term string) (model.ChannelList, error) {
 	return s.performSearch(`
 		SELECT
